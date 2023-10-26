@@ -41,3 +41,6 @@ const myFun = function() {
     console.log("my Function ")
 }
 console.log(myFun) 
+
+// ==================================================================================
+// memories 2 types = stack(primitive) and heap(non-primitive)
