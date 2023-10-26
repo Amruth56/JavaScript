@@ -18,3 +18,8 @@ console.log(`toFixed function it helps to fix the number of decimal numbers: ${s
 const otherNum = 12.123456789
 console.log(otherNum.toFixed(2))
 console.log(otherNum.toPrecision(3))
+
+// ===============================================================================================
+console.log(Math)
+console.log(`use of absolute function on (-4) is ${Math.abs(-4)}`)
+console.log(`use of round function on 3.4 :${Math.round(3.4)}, on 3.6: ${Math.round(3.6)}, on 5.4 :${Math.round(5.4)}, on 5.6: ${Math.round(5.6)}, on 5.5: ${Math.round(5.5)}`)
