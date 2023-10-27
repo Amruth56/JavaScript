@@ -16,11 +16,25 @@ console.log(`using unshift operation : ${arr2}`)
 
 console.log(`using shift operation : ${arr2.shift()}`)
 console.log(`array after shiuft operation ${arr2}`)
-console.log(`using 'includes' operation to check if 9 is present in the array or not :${arr2.includes(9)}`)
+console.log(`using 'includes' operation to check if 9 is present in the array or not :${arr2.includes(9)}\n`)
 
 
 // 
-console.log(`\n ${arr1}`)
+console.log(` ${arr1}`)
 console.log(`use of 'slice' operation from 1,7 :${arr1.slice(1,7)}`)
 console.log(`use of 'splice' operation from 1,7 :${arr1.splice(1,7)}`)
 console.log(`slice opeartion does not include the last element where as splice opeartion includes the last operation`)
+
+
+// 
+console.log(`\n`)
+const num = [1,2,3,4,5]
+const alpha = ['a', 'b', 'c', 'd', 'e']
+
+const alphaNum1 = num.push(alpha)
+console.log(`using push : ${alphaNum1}`)
+console.log(`using push : ${num.push(alpha)}\n`)
+
+const alphaNum2 = num.concat(alpha)
+console.log(`using 'concat' : ${alphaNum2}`)
+console.log(`using 'concat' : ${num.concat(alpha)}\n`)
