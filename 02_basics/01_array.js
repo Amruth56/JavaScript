@@ -38,3 +38,17 @@ console.log(`using push : ${num.push(alpha)}\n`)
 const alphaNum2 = num.concat(alpha)
 console.log(`using 'concat' : ${alphaNum2}`)
 console.log(`using 'concat' : ${num.concat(alpha)}\n`)
+
+const anotherArr = [1,2,3,[4,5,6],2,[1,2,[3,4,5]], 8]
+console.log(`anotherArr :${anotherArr}`)
+const arr3 = anotherArr.flat(Infinity)
+console.log(`using 'flat' opeartion on anotherArr :${arr3}\n`)
+
+console.log(`using 'from' operation :${Array.from("Amruth")} `)
+console.log(`using 'from' operation :${Array.isArray("Amruth")} `)
+
+const score1 = 100
+const score2 = 200
+const score3 = 300
+
+console.log(`using 'of' operation :${Array.of(score1, score3, score2)}`)
