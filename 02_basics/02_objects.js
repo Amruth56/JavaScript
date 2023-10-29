@@ -30,8 +30,22 @@ console.log(`type of [mysym] : ${typeof jsUser1.mysym} \n` )
 jsuser.email = "wdfgbnkiuy@gmail.com"
 console.log(jsuser["email"])
 // we can freez the object from getting further changes 
-Object.freeze(jsuser)
+// Object.freeze(jsuser)
 jsuser.email = "updatedMail@gmail.com"
 console.log(jsuser)
 console.log(`\n`)
 console.log(jsUser1)
+console.log(`\n`)
+
+jsuser.greetings = function()
+{
+    console.log("hello everyone")
+}
+console.log(jsuser.greetings) // function (anonymous)
+console.log(jsuser.greetings())
+
+jsuser.greeting = function()
+{
+    console.log(`hello , ${this.name}`)
+}
+console.log(jsuser.greeting())
