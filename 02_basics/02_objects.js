@@ -22,3 +22,11 @@ const jsUser1 = {
 }
 console.log(jsUser1[mysym])
 console.log(jsUser1.mysym)
+
+// we can rewrite the values
+jsuser.email = "wdfgbnkiuy@gmail.com"
+console.log(jsuser["email"])
+// we can freez the object from getting further changes 
+Object.freeze(jsuser)
+jsuser.email = "updatedMail@gmail.com"
+console.log(jsuser)
