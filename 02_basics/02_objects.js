@@ -21,7 +21,10 @@ const jsUser1 = {
     mysym:"dwcbhj"
 }
 console.log(jsUser1[mysym])
+console.log(`type of [mysym] : ${typeof jsUser1[mysym]}` )
 console.log(jsUser1.mysym)
+console.log(`type of [mysym] : ${typeof jsUser1.mysym} \n` )
+
 
 // we can rewrite the values
 jsuser.email = "wdfgbnkiuy@gmail.com"
@@ -30,3 +33,5 @@ console.log(jsuser["email"])
 Object.freeze(jsuser)
 jsuser.email = "updatedMail@gmail.com"
 console.log(jsuser)
+console.log(`\n`)
+console.log(jsUser1)
