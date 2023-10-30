@@ -45,5 +45,12 @@ const obj2 = {
 }
 //to concatinate two or more objects 
 const obj3 = Object.assign(obj1, obj2)
-console.log(`using 'assign' operator to concatinate two or more objects :`, obj3)
-console.log(obj3 === obj1)
+// console.log(`using 'assign' operator to concatinate two or more objects :`, obj3)
+// console.log(obj3 === obj1)
+const obj4 = {...obj1, ...obj2}
+// console.log(obj4)
+
+console.log(Object.keys(whatsappUser1)) // retruned data type is in array
+console.log(Object.values(whatsappUser1)) // retruned data type is in array
+console.log(Object.entries(whatsappUser1)) // retruned data type is in array inside an array
+console.log(Object.hasOwnProperty('name2')) // to check if the specified property is used or not 
