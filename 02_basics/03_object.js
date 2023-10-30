@@ -30,10 +30,20 @@ const instaUser= {
     },
     age:21
 }
-console.log("instaUdser :", instaUser)
-console.log("instaUser.name :",instaUser.name)
-console.log("instaUser.name.fullname :",instaUser.name.fullname)
-console.log("instaUser.name.fullname.lastname :",instaUser.name.fullname.lastname)
-console.log("instaUser.name.userID :",instaUser.name.userID, "\n")
-
+// console.log("instaUdser :", instaUser)
+// console.log("instaUser.name :",instaUser.name)
+// console.log("instaUser.name.fullname :",instaUser.name.fullname)
+// console.log("instaUser.name.fullname.lastname :",instaUser.name.fullname.lastname)
+// console.log("instaUser.name.userID :",instaUser.name.userID, "\n")
 // console.log(`nested objects :${instaUser.name}`)
+
+const obj1  = {
+    name : "qwe", id: 123
+}
+const obj2 = {
+    name : "asd", id : 543
+}
+//to concatinate two or more objects 
+const obj3 = Object.assign(obj1, obj2)
+console.log(`using 'assign' operator to concatinate two or more objects :`, obj3)
+console.log(obj3 === obj1)
