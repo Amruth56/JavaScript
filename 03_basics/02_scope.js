@@ -21,7 +21,19 @@ if(true)
         console.log(username , age)
     }
     // console.log(age);
-    console.log(username)
+    // console.log(username)
 
 }
 // console.log(username)
+
+
+function addone (num)
+{
+    return num +1;
+}
+console.log(addone(5))
+
+const addTwo = function(num){
+    return num +2;
+}
+console.log(addTwo(3));
