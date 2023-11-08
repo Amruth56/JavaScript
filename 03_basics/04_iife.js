@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expression 
 
 //By wrapping the function in parentheses, it creates a new scope, preventing pollution of the global scope.
-(function greetings()
+(function greetings() // named(ie greetings ) iife
 {
     console.log("hello everyone")
 })() ;//The function logs “hello everyone” to the console when invoked.
@@ -10,7 +10,7 @@
 
 
 // arrow function 
-(() => {
+(() => { //unnamed IIFE
     console.log(`DB connected`);
 })();
 
