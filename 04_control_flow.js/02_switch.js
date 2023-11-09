@@ -51,3 +51,32 @@ switch (month) {
         console.log("None ")
         break;
 }
+
+const day = "Wednesday"
+switch (day) {
+    case "Sunday":
+        console.log("its sunday")
+        break;
+    case "Monday":
+        console.log("its Monday")
+        break;
+    case "Tuesday":
+        console.log("its Tuesday")
+        break;
+    case "Wednesday":
+        console.log("its Wednesday")
+        break;
+    case "Thursday":
+        console.log("its Thursday")
+        break;
+    case "Friday":
+        console.log("its Friday")
+        break;
+    case "Saturday":
+        console.log("its Saturday")
+        break;
+
+    default:
+        console.log("Incorrect day")
+        break;
+}
