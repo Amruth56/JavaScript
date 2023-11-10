@@ -34,5 +34,5 @@ const myobj ={
     "hello" : 4
 }
 for (const [x , y] of myobj) {
-    // console.log( x , y)             object is not iteratable
+    // console.log( x , y)             object is not iteratable in for of
 }
