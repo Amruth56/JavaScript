@@ -1,0 +1,39 @@
+<!-- DOM = Document Object Model -->
+
+<!-- document.getElementById("id name")
+     document.getElementById("id name").id
+     document.getElementById("id name").className
+     document.getElementById("id name").class
+     document.getElementByclassName("class name")
+     document.getElementById("id name").getAttribute('id')
+     document.getElementById("id name").getAttribute('class')
+     document.getElementById("id name").setAttribute('class', 'overWrite')
+
+     const title = document.getElementById('title')
+     
+     title.style.backgroundColor="aqua"
+     title.textContent      // displays even the invisible visible text
+     title.innerHTML        // displays Every HTML values
+     title.innerText        // displays only the visible text
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+    <h1 id = "title" class="heading">DOM learning on youtube <span style = "display:none">test text</span> </h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+    
+</body>
+</html>
