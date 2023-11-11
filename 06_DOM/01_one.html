@@ -9,12 +9,28 @@
      document.getElementById("id name").getAttribute('class')
      document.getElementById("id name").setAttribute('class', 'overWrite')
 
+     document.querySelector('h1')
+     document.querySelector('#title')           //to select am id
+     document.querySelector('.heading')         //to select a class
+     document.querySelector('input[type="password"]')
+     const myul = document.querySelector('ul')
+     myul.querySelector('li')
+     myul.querySelector('li').style.backgroundColor = "green"
+
      const title = document.getElementById('title')
      
      title.style.backgroundColor="aqua"
      title.textContent      // displays even the invisible visible text
      title.innerHTML        // displays Every HTML values
      title.innerText        // displays only the visible text
+
+     const templist = document.queryselector('li')
+     templist.forEach(function (l) {
+        l.style.backgroundColor = "pink"
+     })
+
+
+     Array.from(name) // to convert name to array
      -->
 
 <!DOCTYPE html>
@@ -32,7 +48,20 @@
 <body class="bg-black">
     <div >
     <h1 id = "title" class="heading">DOM learning on youtube <span style = "display:none">test text</span> </h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, officia?.</p>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+    <input type="password" name="" id="">
+
+    <ul>
+        <li class='list-item'>one</li>
+        <li class='list-item'>two</li>
+        <li class='list-item'>three</li>
+        <li class='list-item'>four</li>
+    </ul>
 </div>
     
 </body>
