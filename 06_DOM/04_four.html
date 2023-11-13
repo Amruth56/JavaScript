@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn JavaScript</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <un class="language">
+        <li>JavaScript</li>
+    </un>
+</body>
+<script>
+
+    //to add elements
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("C++")
+    addLanguage("Python")
+
+
+    function optiLanguage(lanName)
+    {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lanName))
+        document.querySelector('.language').appendChild(li)
+    }
+    optiLanguage("Java")
+    optiLanguage("Ruby")
+
+    //to edit elements
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+
+    //optimized
+    const newli = document.createElement("li")
+    newli.textContent = "Swift"
+    secondLang.replaceWith(newli)
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>TypeScript</li>'
+
+
+    // to remove 
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+
+</script>
+</html>
