@@ -60,7 +60,6 @@
     
 
 
-
     // document.getElementById('images').addEventListener('click', function(e) {
     //     console.log("click inside the ul")
     // }, false)
@@ -72,13 +71,37 @@
 
 
 
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log("google click ")
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // }, false)
 
-    document.getElementById('google').addEventListener('click', function(e){
-        console.log("google click ")
-        e.preventDefault();
-        e.stopPropagation();
-    }, false)
 
+
+
+
+    //to remove the images when clicked
+        // document.querySelector('#images').addEventListener('click', function(e){
+        //     // console.log(e.target);
+        //     console.log(e.target.parentNode);
+        //     let removeIt = e.target.parentNode
+        //     // removeIt.remove(); 
+        //     removeIt.parentNode.removeChild(removeIt);
+        // })
+        
+        document.querySelector('#images').addEventListener('click', function(e){
+            // console.log(e.target);
+            console.log(e.target.parentNode);
+            console.log(e.target.tagName)
+            if(e.target.tagName === 'IMG')
+            {
+                console.log(e.target.id)
+                let removeIt = e.target.parentNode
+            removeIt.remove(); 
+            }
+            
+        })
 
 
 
