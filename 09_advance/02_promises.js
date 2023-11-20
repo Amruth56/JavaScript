@@ -114,3 +114,33 @@ const promiseOne = new Promise(function(resolve, reject){
 // }).catch((err)=>{
 //     console.log(err)
 // }).finally(()=>{console.log("finally executed")})
+
+
+
+
+
+//                                      async syntex to consume the promise 
+const promiseFive = new Promise((resolve, reject) => {
+        setTimeout(function(){
+        let error = true
+        if (!error) {
+            resolve({username : "JavaScript", email : "Script@javaScript.com"})
+        }   else    {
+                reject("error 123456")
+        }
+    }, 1000)
+})
+
+                         // saync await = waits for the job to be done, and if the job id not done it will throw us an error 
+async function consumePromiseFive(){
+                         // we can use await whenever there is a async keyword 
+
+    try{
+     const response = await promiseFive
+     console.log(response);
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
+consumePromiseFive()
