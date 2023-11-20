@@ -119,28 +119,62 @@ const promiseOne = new Promise(function(resolve, reject){
 
 
 
-//                                      async syntex to consume the promise 
-const promiseFive = new Promise((resolve, reject) => {
-        setTimeout(function(){
-        let error = true
-        if (!error) {
-            resolve({username : "JavaScript", email : "Script@javaScript.com"})
-        }   else    {
-                reject("error 123456")
-        }
-    }, 1000)
+// //                                      async syntex to consume the promise 
+// const promiseFive = new Promise((resolve, reject) => {
+//         setTimeout(function(){
+//         let error = true
+//         if (!error) {
+//             resolve({username : "JavaScript", email : "Script@javaScript.com"})
+//         }   else    {
+//                 reject("error 123456")
+//         }
+//     }, 1000)
+// })
+
+//                          // saync await = waits for the job to be done, and if the job id not done it will throw us an error 
+// async function consumePromiseFive(){
+//                          // we can use await whenever there is a async keyword 
+
+//     try{
+//      const response = await promiseFive
+//      console.log(response);
+//     }
+//     catch (error) {
+//         console.log(error)
+//     }
+// }
+// consumePromiseFive()
+
+
+
+
+
+// async function getAllUses(){
+//     try {
+//         const response =await  fetch('https://jsonplaceholder.typicode.com/users')
+//         // console.log(response)
+//         // const data = response.json()            //response.json is not a function 
+//         const data = await response.json()            
+//         console.log(data)
+//     } catch (error) {
+//         console.log("Error :", error)
+//     }
+// }
+// getAllUses()
+
+
+
+
+
+//                                      the above in .then() and .catch() format
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json
 })
-
-                         // saync await = waits for the job to be done, and if the job id not done it will throw us an error 
-async function consumePromiseFive(){
-                         // we can use await whenever there is a async keyword 
-
-    try{
-     const response = await promiseFive
-     console.log(response);
-    }
-    catch (error) {
-        console.log(error)
-    }
-}
-consumePromiseFive()
+// to handel the returned response.json
+.then((responseData)=> {
+    console.log(responseData)
+})
+.catch( (error) => 
+     console.log(error) 
+)
