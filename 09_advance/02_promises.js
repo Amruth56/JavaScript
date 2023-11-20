@@ -24,7 +24,8 @@ const promiseOne = new Promise(function(resolve, reject){
     do an Async task like, calling a DataBase, cryptography, network calls
 })
 */
-//resolve is directly connected with then 
+//resolve is directly connected with .then()
+//reject is directly connected with .catch()
 
 
 
@@ -91,3 +92,24 @@ const promiseOne = new Promise(function(resolve, reject){
 
 
 
+//                                      
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = false
+        if (!error) {
+            resolve({username : "Java", email : "Script@javaScript.com"})
+        }   else    {
+                reject("error 123")
+        }
+    }, 1000)
+})
+
+//                                      chaining, useful to connect databases 
+promiseFour.then((user) => {
+    console.log(user)
+    return user.username
+}).then(function(username){
+    console.log(username)
+}).catch((err)=>{
+    console.log(err)
+})
