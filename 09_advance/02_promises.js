@@ -35,7 +35,8 @@ const promiseOne = new Promise(function(resolve, reject){
 //         console.log("Async task is complete")
 //     }, 1000)
 // })
-// // consuming the promise 
+
+// //                   consuming the promise 
 // promiseOne.then(function(){
 //     console.log("promise consumed")
 // })
@@ -46,38 +47,47 @@ const promiseOne = new Promise(function(resolve, reject){
 
 
 //                                   to connect resolve to .then 
-const promiseOne = new Promise(function(resolve, reject) {
-    setTimeout(function(){
-        // resolve()
-        console.log("Async task is complete")
-        resolve()
-    }, 1000)
-})
-// consuming the promise 
-promiseOne.then(function(){
-    console.log("promise consumed")
-})
+// const promiseOne = new Promise(function(resolve, reject) {
+//     setTimeout(function(){
+//         // resolve()
+//         console.log("Async task is complete")
+//         resolve()
+//     }, 1000)
+// })
+
+// //                    consuming the promise 
+// promiseOne.then(function(){
+//     console.log("promise consumed")
+// })
 
 
 
 
 
-new Promise(function(resolve, reject){
-    setTimeout(function(){
-        console.log("Async task 2")
-        resolve()
-    }, 1000)
-}). then(function(){
-    console.log("Second promisehas been called")
-})
+// new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         console.log("Async task 2")
+//         resolve()
+//     }, 1000)
+// }). then(function(){
+//     console.log("Second promisehas been called")
+// })
 
 
 
 
 
+// //                                      to pass the data received from the network
+// const promiseThree = new Promise(function(resolve, reject){
+//     setTimeout(function() {
+//         resolve({username : "You", email: "Tube@youtube.com"})
+//     }, 1000)
+// })
+// promiseThree.then(function(user){
+//     console.log(user)
+// })
 
-const promiseThree = new Promise(function(resolve, reject){
-    setTimeout(funcion() {
 
-    }, 1000)
-})
+
+
+
