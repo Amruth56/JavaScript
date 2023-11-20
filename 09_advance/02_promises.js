@@ -26,6 +26,7 @@ const promiseOne = new Promise(function(resolve, reject){
 */
 //resolve is directly connected with .then()
 //reject is directly connected with .catch()
+//finally will execute always even its resolve or reject
 
 
 
@@ -92,24 +93,24 @@ const promiseOne = new Promise(function(resolve, reject){
 
 
 
-//                                      
-const promiseFour = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        let error = false
-        if (!error) {
-            resolve({username : "Java", email : "Script@javaScript.com"})
-        }   else    {
-                reject("error 123")
-        }
-    }, 1000)
-})
+                                 
+// const promiseFour = new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         let error = false
+//         if (!error) {
+//             resolve({username : "Java", email : "Script@javaScript.com"})
+//         }   else    {
+//                 reject("error 123")
+//         }
+//     }, 1000)
+// })
 
-//                                      chaining, useful to connect databases 
-promiseFour.then((user) => {
-    console.log(user)
-    return user.username
-}).then(function(username){
-    console.log(username)
-}).catch((err)=>{
-    console.log(err)
-})
+// //                                      chaining, useful to connect databases 
+// promiseFour.then((user) => {
+//     console.log(user)
+//     return user.username
+// }).then(function(username){
+//     console.log(username)
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{console.log("finally executed")})
