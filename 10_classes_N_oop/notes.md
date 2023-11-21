@@ -20,4 +20,4 @@ object literal
 * Abstraction
 * Encpsulation
 * Inheritance
-* polymorphism 
+* polymorphism.
