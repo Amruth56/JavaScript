@@ -17,7 +17,7 @@ object literal
 - instances (new, this)
 
 ## 4 pillars 
-* Abstraction
+* Abstraction = to hide details (eg: fetch)
 * Encpsulation
 * Inheritance
 * polymorphism.
